@@ -1,0 +1,16 @@
+<p id="info">Welcome to My Page!</p>
+    <button id="changeTextBtn">Change Text</button>
+    <br><br><br>
+    <p id="info2">Welcome to My Page!</p>
+    <button id="changeTextBtn2">Change Text-2</button>
+
+<script>
+    document.getElementById("changeTextBtn").addEventListener("click", function() {
+    document.getElementById("info").innerText = "Thank you for visiting!";
+
+    document.getElementById("changeTextBtn2").addEventListener("click", function() {
+        document.getElementById("info2").innerHTML = "<strong>Thank you</strong> for visiting!";
+    /* document.getElementById("info").innerHTML = "<strong>Thank you</strong> for visiting!"; */
+  })});
+</script>
+  
