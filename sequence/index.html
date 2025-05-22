@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+  <style>
+    .stack-container {
+      position: relative;
+      width: 400px;
+      height: 300px;
+      margin: 50px auto;
+    }
+
+    .stack-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 4px solid white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .img-large {
+      width: 100%;
+    }
+
+    .img-medium {
+      width: 70%;
+    }
+
+    .img-small {
+      width: 40%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="stack-container">
+  <!-- This image will be at the bottom -->
+  <img src="https://picsum.photos/id/1015/400/300" class="img-large" alt="Large Image" style="z-index: 2;">
+  <!-- This one in the middle -->
+  <img src="https://picsum.photos/id/1016/280/210" class="img-medium" alt="Medium Image" style="z-index: 3;">
+  <!-- This one on top -->
+  <img src="https://picsum.photos/id/1018/160/120" class="img-small" alt="Small Image" style="z-index: 4;">
+</div>
+
+</body>
+</html>
